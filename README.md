@@ -13,3 +13,10 @@ If you intend to use an emulator to see how your application behaves, especially
 
 ### Expo
 If you're a super laid-back coder who just wants to keep things chill and test both Android and iOS systems (you'll need an iOS mobile device for it) with your own hands, then Expo is the right vibe for you. All you gotta have is the __Expo app on your smartphone and Node.js__.
+
+# Expo Managed workflow vs Bare workflow
+### Managed workflow
+Ideal for developers who want a quick setup, __don't require extensive native modules__, and prioritize ease of development over custom configurations.
+
+### Bare workflow
+Suitable for projects that require __more control over the native code__, need access to specific native modules, or have dependencies that are not supported in the Expo SDK.
