@@ -5,6 +5,8 @@ This is gonna be a repository where I'm gonna share the basic fundamentals of Re
 
 React Native is a framework to develop cross-platform applications for IOS and Android operating systems using JavaScript.
 
+![Sample Image](https://www.inovex.de/wp-content/uploads/2018/03/react-native-1500x880.png)
+
 # Expo vs CLI
 There are two different ways to approach a React Native application.
 
