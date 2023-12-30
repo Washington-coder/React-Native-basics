@@ -22,3 +22,12 @@ Ideal for developers who want a quick setup, __don't require extensive native mo
 
 ### Bare workflow
 Suitable for projects that require __more control over the native code__, need access to specific native modules, or have dependencies that are not supported in the Expo SDK.
+
+# Basic tags on React Native
+
+### Text
+Alright, let's talk about the \<Text> tag in React Native. This bad boy is your go-to for displaying text on your app. It's like the guy you call when you need to show words, headings, or paragraphs. It's kinda like the \<span> or \<p> tags in web dev, but tuned up for React Native goodness. Perfect for making your app speak with style!
+
+### View
+So, in React Native, the 'View' thing is like your go-to Lego block for setting up and arranging stuff on your app screen. It's kind of like the __\<div>__ you use in web development to group things together. Basically, it's your container buddy – toss in some components, and it helps you keep things organized and looking good on the screen. Easy peasy!
+
