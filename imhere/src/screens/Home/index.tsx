@@ -30,12 +30,12 @@ export default function Home() {
                     style={styles.button}
                     onPress={handleParticipantAdd}
                 >
-                    <Text style={styles.buttonText}>-</Text>
+                    <Text style={styles.buttonText}>+</Text>
                 </TouchableOpacity>
             </View>
-            <Participant />
-            <Participant />
-            <Participant />
+            <Participant name='Washington1'/>
+            <Participant name='Washington2'/>
+            <Participant name='Washington3'/>
         </View>
     );
 }
