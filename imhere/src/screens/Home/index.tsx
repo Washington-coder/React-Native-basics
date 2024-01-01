@@ -1,5 +1,5 @@
 import {
-    ScrollView,
+    FlatList,
     Text,
     TextInput,
     TouchableOpacity,
@@ -43,17 +43,23 @@ export default function Home() {
                 </TouchableOpacity>
             </View>
 
-            <ScrollView showsVerticalScrollIndicator={false}>
-                {
-                    participants.map(participant => (
-                        <Participant
-                            key={participant}
-                            name={participant}
-                            onRemove={() => handleParticipantRemove("Washington")}
-                        />
-                    ))
-                }
-            </ScrollView>
+            <FlatList
+                showsVerticalScrollIndicator={false}
+                data={participants}
+                keyExtractor={item => item}
+                renderItem={({item}) => (
+                    <Participant
+                        key={item}
+                        name={item}
+                        onRemove={() => handleParticipantRemove("Washington")}
+                    />
+                )}
+                ListEmptyComponent={() => (
+                    <Text style={styles.listEmptyText}>
+                        Ninguém chegou no evento ainda ? Adicione participantes a sua lista de presença.
+                    </Text>
+                )}
+            />
 
         </View>
     );
