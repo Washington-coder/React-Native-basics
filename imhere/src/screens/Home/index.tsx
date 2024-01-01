@@ -8,8 +8,13 @@ import { styles } from './styles';
 import { Participant } from '../../components/Participant';
 
 export default function Home() {
+
     function handleParticipantAdd() {
         console.log('Você clicou no botão de adicionar');
+    }
+
+    function handleParticipantRemove(name: string) {
+        console.log(`Você clicou no botão de remover ${name}`);
     }
 
     return (
@@ -33,9 +38,9 @@ export default function Home() {
                     <Text style={styles.buttonText}>+</Text>
                 </TouchableOpacity>
             </View>
-            <Participant name='Washington1'/>
-            <Participant name='Washington2'/>
-            <Participant name='Washington3'/>
+
+            <Participant name='Washington' onRemove={() => handleParticipantRemove("Washington")}/>
+            
         </View>
     );
 }
