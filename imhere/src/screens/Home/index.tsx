@@ -1,4 +1,5 @@
 import {
+    ScrollView,
     Text,
     TextInput,
     TouchableOpacity,
@@ -8,6 +9,9 @@ import { styles } from './styles';
 import { Participant } from '../../components/Participant';
 
 export default function Home() {
+
+    const participants = ['Rodrigo', 'Vini', 'Diego', 'Biro', 'Ana', 'Isa', 'Jack', 'Mayk', 'Joao'];
+
 
     function handleParticipantAdd() {
         console.log('Você clicou no botão de adicionar');
@@ -39,8 +43,18 @@ export default function Home() {
                 </TouchableOpacity>
             </View>
 
-            <Participant name='Washington' onRemove={() => handleParticipantRemove("Washington")}/>
-            
+            <ScrollView showsVerticalScrollIndicator={false}>
+                {
+                    participants.map(participant => (
+                        <Participant
+                            key={participant}
+                            name={participant}
+                            onRemove={() => handleParticipantRemove("Washington")}
+                        />
+                    ))
+                }
+            </ScrollView>
+
         </View>
     );
 }
