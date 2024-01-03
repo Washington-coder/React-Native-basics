@@ -11,15 +11,16 @@ import { styles } from './styles';
 import { Participant } from '../../components/Participant';
 
 export default function Home() {
-    const [participants, setParticipants] = useState(['João']);
+    const [participants, setParticipants] = useState<string[]>(['João']);
+    const [participantName, setParticipantName] = useState('');
 
     function handleParticipantAdd() {
-        if (participants.includes("Rodrigo")){
+        if (participants.includes(participantName)) {
             return Alert.alert("Participante existe", "Já existe um participante na lista com esse nome.");
         }
 
-        setParticipants(prevState => [...prevState, 'Gabriel']);
-        console.log(participants)
+        setParticipants(prevState => [...prevState, participantName]);
+        setParticipantName('');
     }
 
     function handleParticipantRemove(name: string) {
@@ -48,6 +49,8 @@ export default function Home() {
                     style={styles.input}
                     placeholder='Nome do participante'
                     placeholderTextColor="#6b6b6b"
+                    onChangeText={setParticipantName}
+                    value={participantName}
                 />
                 <TouchableOpacity
                     style={styles.button}
@@ -61,7 +64,7 @@ export default function Home() {
                 showsVerticalScrollIndicator={false}
                 data={participants}
                 keyExtractor={item => item}
-                renderItem={({item}) => (
+                renderItem={({ item }) => (
                     <Participant
                         key={item}
                         name={item}
