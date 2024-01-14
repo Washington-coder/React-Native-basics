@@ -31,3 +31,27 @@ Alright, let's talk about the \<Text> tag in React Native. This bad boy is your 
 ### View
 So, in React Native, the 'View' thing is like your go-to Lego block for setting up and arranging stuff on your app screen. It's kind of like the __\<div>__ you use in web development to group things together. Basically, it's your container buddy – toss in some components, and it helps you keep things organized and looking good on the screen. Easy peasy!
 
+# Project I'm Here
+
+### What I learned
+- Inline styling
+- StyleSheet styling
+- TextInput
+- TouchableOpacity
+- Components
+- Components Props
+- ScrollView
+- FlatList
+- StatusBar
+- Alert
+- States (useState)
+- prevState
+
+### Screens
+![Minha Foto](assets/imhere_main_screen.jpeg)
+<video width="640" height="360" controls>
+  <source src="assets/imhere_main_video.mp4" type="video/mp4">
+  Seu navegador não suporta o elemento de vídeo.
+</video>
+
+
