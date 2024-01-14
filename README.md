@@ -33,6 +33,9 @@ So, in React Native, the 'View' thing is like your go-to Lego block for setting 
 
 # Project I'm Here
 
+### Description
+This project is a simple solution for a list of participants that were invited for an event. You basically can add and remove participants.
+
 ### What I learned
 - Inline styling
 - StyleSheet styling
@@ -49,9 +52,7 @@ So, in React Native, the 'View' thing is like your go-to Lego block for setting 
 
 ### Screens
 ![Minha Foto](assets/imhere_main_screen.jpeg)
-<video width="640" height="360" controls>
-  <source src="assets/imhere_main_video.mp4" type="video/mp4">
-  Seu navegador não suporta o elemento de vídeo.
-</video>
+![Texto Alternativo](assets/imhere_main_gif.gif)
+
 
 
